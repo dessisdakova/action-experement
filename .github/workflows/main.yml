@@ -13,3 +13,9 @@ jobs:
     steps:
       - name: Greet the user
         run: echo "Hello Desislava"
+      - name: Show directory before checkout
+        run: ls -l
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Show directory after checkout
+        run: ls -l
